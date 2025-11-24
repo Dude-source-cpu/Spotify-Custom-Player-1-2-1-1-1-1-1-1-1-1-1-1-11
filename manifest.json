@@ -1,0 +1,15 @@
+{
+    "name": "Spotify Glass Player",
+    "short_name": "Spotify Glass",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#ff9a9e",
+    "icons": [
+        {
+            "src": "app_icon.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        }
+    ]
+}
