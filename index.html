@@ -60,6 +60,10 @@
                     <span class="control-label">LIBRARY</span>
                     <i class="fa-solid fa-list control-icon"></i>
                 </div>
+                <div class="control-item" id="shuffle-btn">
+                    <span class="control-label">SHUFFLE</span>
+                    <i class="fa-solid fa-shuffle control-icon"></i>
+                </div>
                 <div class="control-item" id="prev-btn">
                     <span class="control-label">PREVIOUS</span>
                     <i class="fa-solid fa-backward-step control-icon"></i>
@@ -69,6 +73,17 @@
                     <i class="fa-solid fa-forward-step control-icon"></i>
                 </div>
             </div>
+
+            <!-- Failsafe to hide splash screen if JS crashes -->
+            <script>
+                setTimeout(() => {
+                    const splash = document.getElementById('splash-screen');
+                    if (splash && !splash.classList.contains('hidden')) {
+                        console.warn('Failsafe: Hiding splash screen');
+                        splash.classList.add('hidden');
+                    }
+                }, 4000);
+            </script>
 
             <!-- Play/Pause Button (Replacing Toggle Weather) -->
             <div class="play-pause-container">
